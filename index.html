@@ -1,1 +1,178 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Sandal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ff9800;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffe0b2;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .produk {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        .harga {
+            color: #ff5722;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .card button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #e68900;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JUAL SANDAL</h1>
+        <p>Toko Sandal Murah dan Berkualitas</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Selamat Datang di Toko Sandal</h2>
+        <p>Temukan sandal favoritmu dengan harga terjangkau!</p>
+    </section>
+
+    <section class="produk" id="produk">
+        <h2>Produk Kami</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Sandal+Jepit"
+                     alt="Sandal Jepit">
+                <h3>Sandal Jepit</h3>
+                <p class="harga">Rp25.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Sandal+Casual"
+                     alt="Sandal Casual">
+                <h3>Sandal Casual</h3>
+                <p class="harga">Rp50.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Sandal+Sport"
+                     alt="Sandal Sport">
+                <h3>Sandal Sport</h3>
+                <p class="harga">Rp75.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <p>Hubungi Kami: 08xxxxxxxxxx</p>
+        <p>&copy; 2026 Jual Sandal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
